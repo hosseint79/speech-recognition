@@ -1,9 +1,13 @@
+@font-face {
+  font-family: "iranYekan";
+  src: url("/iranYekan/IRANYekanRegular.ttf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: iranYekan !important;
 }
 
 a {
@@ -13,4 +17,55 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  width: 480px;
+  height: 300px;
+  border-radius: 8px;
+  margin: 150px auto;
+  direction: rtl;
+}
+.display {
+  height: 150px;
+  width: 100%;
+  background-color: rgba(235, 234, 234, 0.585);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.fileinput-container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.fileinput-container input {
+  display: none;
+}
+.fileinput-container label {
+  width: 100%;
+  display: inline-block;
+  background: rgba(15, 136, 89, 0.705);
+  text-align: center;
+  padding: 12px;
+  color: white;
+  border-radius: 8px;
+}
+.audio-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.btn {
+  padding: 5px 5px;
+  border-radius: 10px;
+  background: rgb(10, 140, 73);
+  color: #fff;
+  cursor: pointer;
+  width: 100px;
+  display: flex;
+  justify-content: center;
 }
